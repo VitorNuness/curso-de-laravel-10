@@ -18,6 +18,11 @@
                 <td>
                     <a href="{{ route('supports.show', $support->id) }}">ir</a>
                     <a href="{{ route('supports.edit', $support->id) }}">editar</a>
+                    <form action="{{ route('supports.destroy', $support->id) }}" method="post">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit">Deletar</button>
+                    </form>
                 </td>
             </tr>
         @endforeach
