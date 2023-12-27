@@ -27,7 +27,7 @@ class SupportEloquentORM implements SupportRepositoryInterface
             ->toArray();
     }
 
-    public function findOnde(string $id): stdClass|null
+    public function findOne(string $id): stdClass|null
     {
         $support = $this->model->find($id);
 
