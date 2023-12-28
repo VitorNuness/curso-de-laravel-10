@@ -23,8 +23,8 @@ class PaginationPresenter implements PaginationInterface
      */
     public function items(): array
     {
+        return $this->items;
         //return $this->paginator->items();
-        return $this->items();
     }
 
     public function total(): int
